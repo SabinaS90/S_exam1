@@ -1,0 +1,474 @@
+@use '_fonts';
+@use '_constants';
+
+body {
+    margin: 0;
+    button:hover {
+        background-color: white;
+        color: constants.$primary;
+        cursor: pointer;
+    }
+    
+
+    
+    
+}
+.main {
+    height: 100vh;
+    background-image: url(/assets/img/background1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &__all {
+        padding-top: 30vh;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & h1 {
+
+        font-family: fonts.$Josefin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 26px;
+        color: white;
+        }
+
+        & p {
+        font-family: fonts.$Josefin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: white;
+        }
+
+
+    }
+
+    &__second {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        & input {
+            height: 4vh;
+            width: 39%;
+            border: none;
+        }
+
+        & input,
+        input::-webkit-input-placeholder{
+           
+            font-family: fonts.$Josefin;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 2.8px;
+        }
+
+        & button {
+            height: 3.5vh;
+            width: 10.8%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-left: -11%;
+            background-color: constants.$primary;
+            color: white;
+            font-family: fonts.$Aleo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+            border: none;
+            letter-spacing: 1.4px;
+            
+
+        }
+
+    
+
+    }
+
+    &__third {
+        padding-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: fonts.$Josefin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        color: white;
+        letter-spacing: 2.8px;
+
+    }
+
+
+    .navbar {
+        margin-top: 15vh;
+        height: 80px;
+        width: 100%;
+        background-color: constants.$primary;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &__text {
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+
+        & a:hover {
+            background-color: white;
+            color: constants.$primary;
+
+        }
+
+
+
+    }
+
+}
+
+.section {
+        height: 100vh;
+        background-image: url(/assets/img/background2.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__text {
+            padding-left: 20%;
+            padding-top: 15%;
+
+            &--p {
+                font-family: fonts.$Josefin;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: white;
+                letter-spacing: 1.6px;
+                margin-bottom: 20px;
+            }
+
+
+        }
+    & h1 {
+        font-family: fonts.$Aleo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 26px;
+        color: white;
+    }
+
+    
+
+    & button {
+        height: 4vh;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        background-color: constants.$primary;
+        color: white;
+        font-family: fonts.$Aleo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        border: none;
+        letter-spacing: 1.4px;
+        padding-left: 5%;
+
+            
+    }
+    &__text--pic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    &__footer {
+        margin-top: 12vh;
+        
+        background-color: #333333;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 4%;
+        padding-bottom: 8%;
+        align-items: center;
+
+        & p {
+            font-family: fonts.$Aleo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 26px;
+            color: white;
+    }
+    
+    }
+
+    .search-icon {
+        font-size: 70px;
+        text-align: center;
+
+        & span {
+            font-size: 70px;
+            color: constants.$primary;
+        }
+    }
+
+    .check-circle {
+        font-size: 70px;
+        text-align: center;
+
+        & span {
+            font-size: 70px;
+            color: rgb(228, 69, 29);
+            background-color: none;
+            border-radius: 50px;
+        }
+    }
+
+    .thumb-up {
+        font-size: 70px;
+        text-align: center;
+
+        & span {
+            font-size: 70px;
+            color: rgb(0, 162, 255);
+        }
+        
+    }
+
+    
+
+}
+
+.third {
+    min-height: 100vh;
+
+    & button {
+        height: 5vh;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        background-color: constants.$primary;
+        color: white;
+        font-family: fonts.$Aleo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        border: none;
+        letter-spacing: 1.4px;
+        padding-left: 9%;
+        padding-right: 7%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+
+
+    }
+
+    & p {
+        font-family: fonts.$Josefin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        }
+
+        & h3, h5 {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        }
+
+    &__backg1 {
+        height: 50vh;
+        background-image: url(/assets/img/background3.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    &__text {
+        height: 374px;
+        width: 20%;
+        background: #232323;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        border: 1px solid #000000;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: white;
+        
+        border: none;
+        padding: 0 1.5% ;
+        margin-left: 20%;
+        margin-top: 4%;
+        position: absolute;
+
+        
+
+        
+        
+    }
+
+    &__backg2 {
+        height: 50vh;
+        background-image: url(/assets/img/background4.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__text2 {
+        height: 374px;
+        width: 20%;
+        background: #232323;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        border: 1px solid #000000;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: white;
+        border: none;
+        padding: 0 1.5% ;
+        margin-left: 50%;
+        margin-top: 4%;
+        position: absolute;
+    }
+}
+
+.last {
+        height: 100%;
+        background-image: url(/assets/img/background5.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 8%;
+
+    & h1 {
+        font-family: Aleo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    &__header {
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    &__page {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+
+    }
+
+    &__text {
+        height: 280px;
+        background: #333333;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: white;
+        align-items: center;
+        border: none;
+        padding-left: 3%;
+        padding-right: 1%;
+        display: grid;
+
+        & h3 {
+        font-family: fonts.$Josefin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        align-items: center;
+        }
+
+        & p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        }
+    }
+    
+
+}
+
+.footer {
+        width: 100%;
+        height: 280px;
+        background: #232323;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: center;
+        align-items: center;
+        margin-top: 48vh;
+
+    &__imgs {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    & p {
+        font-family: fonts.$Josefin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: white;
+    }
+    
+}
+
